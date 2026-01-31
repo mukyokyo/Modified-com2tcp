@@ -14,7 +14,7 @@ Note that the Visual Studio project included in the original source code remains
 ## Requirement
 
 - Windows PC
-- msys2 or GCC Developer Lite(GDLBasalPack & GDLWin64Pack)
+- msys2 or GCC Developer Lite([GDLBasalPack & GDLWin64Pack](https://www.besttechnology.co.jp/modules/knowledge/?GCC%20Developer%20Lite#DOWNLOAD))
 
 The included build.cmd assumes GCC Developer Lite and contains simplified compilation instructions.
 
