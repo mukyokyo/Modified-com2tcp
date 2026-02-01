@@ -4,6 +4,7 @@ if %errorlevel% neq 0 (
  @powershell start-process %~0 -verb runas
  exit
 )
+cd %~dp0
 :IP
 SET TARGETIP=
 SET /P TARGETIP="Destination IP or hostname=
@@ -12,11 +13,12 @@ IF "%TARGETIP%"=="" GOTO :ERR
 SET TARGETPORT=
 SET /P TARGETPORT="Destination port=
 IF "%TARGETPORT%"=="" GOTO :ERR
-nssm.exe install "com2tcp" "C:\src\EMB\W32\com2tcp\com2tcp.exe" "--terminal lsrmst --ignore-dsr \\.\CNCB0 %TARGETIP% %TARGETPORT%"
+nssm.exe install "com2tcp" "com2tcp.exe" "--terminal lsrmst --ignore-dsr \\.\CNCB0 %TARGETIP% %TARGETPORT%"
 nssm.exe set "com2tcp" AppPriority ABOVE_NORMAL_PRIORITY_CLASS
 nssm.exe start "com2tcp"
+ECHO SUCCESS!!
 GOTO FIN
 :ERR
-ECHO FAIL
+ECHO FAIL!!
 :FIN
 timeout 2 > nul
