@@ -5,6 +5,9 @@ if %errorlevel% neq 0 (
  exit
 )
 cd %~dp0
+nssm.exe stop "com2tcp"
+nssm.exe remove "com2tcp" confirm
+echo -------------
 :IP
 SET TARGETIP=
 SET /P TARGETIP="Destination IP or hostname=
