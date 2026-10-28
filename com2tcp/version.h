@@ -25,8 +25,8 @@
 #define C2T_COPYRIGHT_YEARS "2005-2007"
 
 #define C2T_V1 1
-#define C2T_V2 3
-#define C2T_V3 1
+#define C2T_V2 4
+#define C2T_V3 0
 #define C2T_V4 0
 
 #define MK_VERSION_STR1(V1, V2, V3, V4) #V1 "." #V2 "." #V3 "." #V4

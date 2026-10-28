@@ -39,6 +39,10 @@
  * Bigger transfer buffers, socket options also in server mode.
  *  Copyright (c) 2026 BestTechnology CO.,LTD.
  *
+ * Revision 1.4  2026/10/28 t.uemitsu
+ * Added support IOCTL_SERIAL_LSRMST_INSERT and PUSR's baudrate/line control update packets
+ *  Copyright (c) 2026 BestTechnology CO.,LTD.
+ *
  * Revision 1.31  2026/01/27 m.miyashige & t.uemitsu
  * Added support IOCTL_SERIAL_LSRMST_INSERT and PUSR's baudrate/line control update packets
  *  Copyright (c) 2026 BestTechnology CO.,LTD.
